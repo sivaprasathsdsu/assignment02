@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Siva Prasath S, full-stack and mobile developer.">
+    <title>Siva Prasath S | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a href="#home" class="logo">Siva<span>.</span></a>
+        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+        <nav class="site-nav">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <p class="greeting">Hello, I'm</p>
+            <h1>Siva Prasath S</h1>
+            <p class="role">Full-Stack &amp; Mobile Developer</p>
+            <p class="intro">
+                Computer Science student at Dhanalakshmi Srinivasan University. I build web and
+                mobile applications, from clean frontends to working backends.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary">View My Work</a>
+                <a href="#contact" class="btn outline">Contact Me</a>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I am a B.Tech Computer Science student who enjoys turning ideas into complete,
+                working products. My work spans frontend development, mobile app deployment and
+                academic project documentation. I care about clean code, simple interfaces and
+                software that people actually use.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul class="skill-list">
+                <li>HTML, CSS, JavaScript</li>
+                <li>React</li>
+                <li>Python, Flask, Django</li>
+                <li>Kotlin, Jetpack Compose</li>
+                <li>SQL and databases</li>
+                <li>Git and GitHub</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <article class="project-card">
+                    <h3>NelAi Smart Farming</h3>
+                    <p>A React application for smart farming with a set of tools for farm management.</p>
+                    <span class="tags">React, JavaScript</span>
+                </article>
+
+                <article class="project-card">
+                    <h3>SiteManager Android App</h3>
+                    <p>An on-site management app for construction teams, built with Kotlin and Jetpack Compose.</p>
+                    <span class="tags">Kotlin, Compose, Android</span>
+                </article>
+
+                <article class="project-card">
+                    <h3>UCC Civil Calculator</h3>
+                    <p>An Android app for civil engineering calculations based on the Unified Civil Calculator tool.</p>
+                    <span class="tags">Android, Kotlin</span>
+                </article>
+
+                <article class="project-card">
+                    <h3>E-Commerce Website</h3>
+                    <p>A Django and Python online store with product catalog, cart, orders and payments.</p>
+                    <span class="tags">Python, Django</span>
+                </article>
+
+                <article class="project-card">
+                    <h3>Public Complaint Prioritization</h3>
+                    <p>An AI-based web app that ranks public complaints by urgency to help authorities act faster.</p>
+                    <span class="tags">Python, AI, Web</span>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Have a project in mind or want to collaborate? Send me a message.</p>
+            <form id="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="btn primary">Send Message</button>
+            </form>
+            <p id="form-status" role="status"></p>
+
+            <div class="social-links">
+                <a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="mailto:your.email@example.com">Email</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Siva Prasath S. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
